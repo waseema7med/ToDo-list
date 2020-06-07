@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="title">
+            To Do List
+        </h3>
+
+        <div id="oldContainer">
+
+            <div class="inputDiv">
+                <div class="elemnt">
+                    <input type="text" id="task" class="taskElement" placeholder="Enter Task">
+                </div>
+
+                <button id="add" class="genBtnStyle">Add</button>
+            </div>
+        </div>
+
+        <div id="newContainer">
+            
+            <div class="item" onClick="removeDivOnClick(this)">
+                <h2 class="item_input "> Sport</h2>
+                <button id="remove" class="genBtnStyle" onClick="remove(this)">REMOVE</button>
+            </div>
+
+            <div class="item" onClick="removeDivOnClick(this)">
+                <h2 class="item_input "> Eat Breakfast</h2>
+                <button id="remove" class="genBtnStyle" onClick="remove(this)">REMOVE</button>
+            </div>
+
+
+        </div>
+    
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
